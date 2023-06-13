@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Remove Comments and Line Spaces</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Remove Comments and Line Spaces from your code. Remove comments and line spaces from HTML, CSS, JavaScript, PHP, Python, C, C++, Java, Ruby, Go, Swift, Rust, SQL, etc.">
+    <meta name="keywords"
+        content="remove comments, remove line spaces, remove line breaks, remove empty lines, remove comments from code, remove comments from html, remove comments from css, remove comments from javascript, remove comments from php, remove comments from python, remove comments from c, remove comments from c++, remove comments from java, remove comments from ruby, remove comments from go, remove comments from swift, remove comments from rust, remove comments from sql" />
+    <meta name="author" content="Saurav Hathi">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Remove Comments and Line Spaces</h1>
+            <p>Enter your code in the input box below and click the submit button to remove comments and line spaces.
+            </p>
+            <span>Input Size: <span id="inputSize">0</span></span>
+            <span>Output Size: <span id="outputSize">0</span></span>
+        </div>
+        <div class="form">
+            <div class="input">
+                <div class="code">
+                    <textarea id="input" rows="10" cols="50"></textarea>
+                </div>
+                <div class="options">
+                    <div class="checkboxes">
+                        <label for="removeLineSpace">Line Space</label>
+                        <input type="checkbox" id="removeNewLineSpace" name="removeNewLineSpace"
+                            value="removeNewLineSpace">
+                        <label for="removeNewLineSpace">New Line Space</label>
+                        <input type="checkbox" id="removeLineBreak" name="removeLineBreak" value="removeLineBreak">
+                        <label for="removeLineBreak">Line Break</label>
+                        <input type="checkbox" id="removeLineSpace" name="removeLineSpace" value="removeLineSpace">
+                    </div>
+                </div>
+            </div>
+            <div class="output">
+                <textarea id="output" rows="10" cols="50"></textarea>
+            </div>
+        </div>
+        <button onclick="showOutput()">Submit</button>
+    </div>
+</body>
+
+</html>
